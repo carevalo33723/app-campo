@@ -13,5 +13,6 @@ public interface ICosecha extends CrudRepository<Cosecha, Long>{
 	Cosecha findById(int id);
 	
 	
+	
 
 }

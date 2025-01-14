@@ -29,9 +29,8 @@ public class CosechaServiceImpl implements ICosechaService{
 	}
 
 	@Override
-	public int save(Cosecha p) {
-		// TODO Auto-generated method stub
-		return 0;
+	public Cosecha save(Cosecha p) {
+		return dat.save(p);
 	}
 
 	@Override

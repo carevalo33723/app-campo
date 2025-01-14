@@ -102,4 +102,15 @@ public class Cosecha {
 	public void setProducto(Producto producto) {
 		this.producto = producto;
 	}
+	@Override
+	public String toString() {
+	    return "Cosecha{" +
+	            "id=" + id +
+	            ", cantidadCosechada=" + cantidadCosechada +
+	            ", fecha=" + fecha +
+	            ", nota='" + nota + '\'' +
+	            ", arriendatario=" + (arriendatario != null ? arriendatario.getId() : null) +
+	            ", producto=" + (producto != null ? producto.getId() : null) +
+	            '}';
+	}
 }

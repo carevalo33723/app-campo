@@ -24,9 +24,9 @@ public class ArrendatarioService implements IArrendatarioService{
 	}
 
 	@Override
-	public Optional<Arrendatario> Idlistar(int id) {
+	public Optional<Arrendatario> Idlistar(Long id) {
 	
-		return dato.findById((long) id);
+		return dato.findById(id);
 	}
 
 	@Override
@@ -51,6 +51,12 @@ public class ArrendatarioService implements IArrendatarioService{
 	public Arrendatario findByNombre(String nombre) {
 		
 		return dato.findByNombre(nombre);
+	}
+
+	@Override
+	public List<Arrendatario> listarPorSocio(Long socioId) {
+		
+		return dato.findBySocioId(socioId);
 	}
 
 }

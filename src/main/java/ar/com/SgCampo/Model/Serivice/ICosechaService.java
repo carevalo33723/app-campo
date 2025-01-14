@@ -9,7 +9,7 @@ import ar.com.SgCampo.Model.Entity.Cosecha;
 public interface ICosechaService {
 	List<Cosecha> listar();
 	 Optional<Cosecha> Idlistar(int id);
-	 int save (Cosecha p);
+	Cosecha save (Cosecha p);
 	 void eliminar(int id);
 		/* Arrendatario findByNombre(String nombre); */
 	

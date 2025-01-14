@@ -1,6 +1,7 @@
 package ar.com.SgCampo.Model.Entity;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,6 +29,7 @@ public class Arrendatario {
     private Socio socio;
     
     @OneToMany(mappedBy = "arriendatario")
+    
     private List<Cosecha> cosechas;
 
 	public Arrendatario() {
